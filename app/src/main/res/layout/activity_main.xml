@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/NameIDTV"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name :"
+        />
+    <EditText
+        android:id="@+id/NameETID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/NameIDTV"
+        />
+    <TextView
+        android:id="@+id/EmailID"
+        android:layout_below="@+id/NameIDTV"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/EmailETID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NameETID"
+        android:gravity="right"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/EmailID"
+        />
+    <TextView
+        android:id="@+id/FavoriteTvShowID"
+        android:layout_below="@id/EmailID"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite TV Show :"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/FavoriteTvShowETID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/FavoriteTvShowID"
+        android:layout_below="@+id/EmailETID"
+        />
+    <Button
+        android:id="@+id/AddDataButtonBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Add Data"
+        android:layout_below="@+id/FavoriteTvShowID"
+        />
+    <Button
+        android:id="@+id/GetDataButtonBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="View Data"
+        android:layout_below="@+id/FavoriteTvShowID"
+        android:layout_toRightOf="@+id/AddDataButtonBTN"
+        />
+    <Button
+        android:id="@+id/UpdateDataButtonBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Update Data"
+        android:layout_below="@+id/FavoriteTvShowID"
+        android:layout_toRightOf="@+id/GetDataButtonBTN"
+        />
+    <EditText
+        android:id="@+id/IDRequiredET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Insert ID to Delete or Update"
+        android:layout_below="@+id/UpdateDataButtonBTN"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DeleteDataBTN"
+        android:layout_below="@+id/IDRequiredET"
+        android:text="Delete"
+        android:textSize="20sp"
+        />
+
+
+
+</RelativeLayout>
